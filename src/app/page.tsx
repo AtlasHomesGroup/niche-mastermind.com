@@ -31,6 +31,68 @@ export default function Home() {
       accent: "from-[#D4614B] to-[#C05040]",
       tag: "KPIs",
     },
+    {
+      title: "Marketing Systems Mastery",
+      subtitle: "Marketing Systems & Strategy",
+      author: "Michael Franke",
+      url: "https://mss.niche-mastermind.com",
+      modes: ["Flashcard Blitz", "Number Crunch", "Campaign Doctor", "Marketer Quiz"],
+      icon: (
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+        </svg>
+      ),
+      accent: "from-[#E8705A] to-[#D4614B]",
+      tag: "MARKETING",
+    },
+    {
+      title: "Sales Operating System Mastery",
+      subtitle: "Sales OS & Pipeline Management",
+      author: "Michael Franke",
+      url: "https://sos.niche-mastermind.com",
+      modes: ["Flashcard Blitz", "Number Crunch", "Pipeline Doctor", "Sales Rep Quiz"],
+      icon: (
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <line x1="12" y1="8" x2="12" y2="16" />
+          <line x1="8" y1="12" x2="16" y2="12" />
+        </svg>
+      ),
+      accent: "from-[#D4614B] to-[#C05040]",
+      tag: "SALES",
+    },
+    {
+      title: "Acquisitions Mastery",
+      subtitle: "Deal Sourcing & Acquisitions",
+      author: "Michael Franke",
+      url: "https://acq.niche-mastermind.com",
+      modes: ["Flashcard Blitz", "Number Crunch", "Deal Doctor", "Acquisitions Quiz"],
+      icon: (
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+          <polyline points="9 22 9 12 15 12 15 22" />
+        </svg>
+      ),
+      accent: "from-[#E8705A] to-[#D4614B]",
+      tag: "ACQUISITIONS",
+    },
+    {
+      title: "Contract to Close Mastery",
+      subtitle: "Closing Deals from Contract to Settlement",
+      author: "Michael Franke",
+      url: "https://cpc.niche-mastermind.com",
+      modes: ["Flashcard Blitz", "Number Crunch", "Closing Doctor", "Closer Quiz"],
+      icon: (
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+          <polyline points="14 2 14 8 20 8" />
+          <line x1="16" y1="13" x2="8" y2="13" />
+          <line x1="16" y1="17" x2="8" y2="17" />
+        </svg>
+      ),
+      accent: "from-[#D4614B] to-[#C05040]",
+      tag: "CLOSING",
+    },
   ];
 
   const features = [
@@ -133,7 +195,7 @@ export default function Home() {
                 <path d="M4 19.5A2.5 2.5 0 016.5 17H20" />
                 <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" />
               </svg>
-              2 Books
+              6 Books
             </div>
             <div className="stat-badge bg-white/[0.07] text-white/70">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -142,14 +204,14 @@ export default function Home() {
                 <rect x="14" y="14" width="7" height="7" />
                 <rect x="3" y="14" width="7" height="7" />
               </svg>
-              8 Game Modes
+              24 Game Modes
             </div>
             <div className="stat-badge bg-white/[0.07] text-white/70">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <circle cx="12" cy="12" r="10" />
                 <polyline points="12 6 12 12 16 14" />
               </svg>
-              100+ Questions
+              500+ Questions
             </div>
           </div>
         </div>
@@ -168,7 +230,7 @@ export default function Home() {
           </div>
 
           {/* Windows-style tile grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {games.map((game) => (
               <a
                 key={game.title}
